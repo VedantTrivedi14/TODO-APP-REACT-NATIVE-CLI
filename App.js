@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import UserScreen from './src/screens/UserScreen';
-import TodoScreen from './src/screens/TOdoScreen';
+import TodoScreen from './src/screens/TodoScreen';
 const Stack = createNativeStackNavigator();
 
 function App() {
