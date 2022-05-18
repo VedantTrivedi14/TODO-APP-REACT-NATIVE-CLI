@@ -1,19 +1,20 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import UserScreen from './src/screens/UserScreen';
-import TodoScreen from './src/screens/TodoScreen';
-const Stack = createNativeStackNavigator();
+import React, { Component } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import AddTask from './src/screens/AddTasks/AddTasks';
+import AddUser from './src/screens/AddUser';
+import TodoList from './src/screens/TodoList/TodoList';
+import UserList from './src/screens/UserList/UserList';
 
-function App() {
+
+
+const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="User">
-        <Stack.Screen name="User" component={UserScreen} />
-        <Stack.Screen name="TODO" component={TodoScreen} />
+    <AddUser />
+    // <UserList/>
+    // <TodoList/>
+    // <AddTask/> 
+    );
+};
 
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
+
 export default App;

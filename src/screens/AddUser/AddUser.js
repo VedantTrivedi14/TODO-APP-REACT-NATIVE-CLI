@@ -31,7 +31,7 @@ const AddUser = () => {
             <Text style = {{
                 alignSelf: 'center',
                 fontWeight: 'bold',
-                fontSize : 34,
+                fontSize : 30,
                 marginBottom : 50,
             }}>
                 Add User
@@ -52,8 +52,8 @@ const AddUser = () => {
 
                 rules={{
                     required: 'User Id is required',
-                    minLength: { value: 3, message: 'User Id should be at least 3 characters long' },
-                    maxLength: { value: 24, message: 'User Id should not be more than 24 characters long' }
+                    minLength: { value: 5, message: 'User Id should be at least 3 characters long' },
+                    maxLength: { value: 20, message: 'User Id should not be more than 20 characters long' }
                 }}
                 name="userid"
                 control={control}
